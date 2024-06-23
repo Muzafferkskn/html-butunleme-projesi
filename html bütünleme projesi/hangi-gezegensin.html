@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangi Gezegensiniz?</title>
+    <link rel="stylesheet" href="hangi-gezegensin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hangi Gezegensiniz?</h1>
+        <form id="quizForm">
+            <div class="question" onclick="toggleOptions('options1')">
+                <p>1. Bir renk seçin:</p>
+                <div id="options1" class="options">
+                    <input type="radio" id="red" name="q1" value="mars">
+                    <label for="red">Kırmızı</label><br>
+                    <input type="radio" id="blue" name="q1" value="neptune">
+                    <label for="blue">Mavi</label><br>
+                    <input type="radio" id="yellow" name="q1" value="jupiter">
+                    <label for="yellow">Sarı</label><br>
+                    <input type="radio" id="green" name="q1" value="earth">
+                    <label for="green">Yeşil</label>
+                </div>
+            </div>
+            <div class="question" onclick="toggleOptions('options2')">
+                <p>2. Bir mevsim seçin:</p>
+                <div id="options2" class="options">
+                    <input type="radio" id="spring" name="q2" value="venus">
+                    <label for="spring">İlkbahar</label><br>
+                    <input type="radio" id="summer" name="q2" value="mercury">
+                    <label for="summer">Yaz</label><br>
+                    <input type="radio" id="autumn" name="q2" value="saturn">
+                    <label for="autumn">Sonbahar</label><br>
+                    <input type="radio" id="winter" name="q2" value="pluto">
+                    <label for="winter">Kış</label>
+                </div>
+            </div>
+            <div class="question" onclick="toggleOptions('options3')">
+                <p>3. Bir hobi seçin:</p>
+                <div id="options3" class="options">
+                    <input type="radio" id="reading" name="q3" value="mercury">
+                    <label for="reading">Okuma</label><br>
+                    <input type="radio" id="sports" name="q3" value="mars">
+                    <label for="sports">Spor</label><br>
+                    <input type="radio" id="travel" name="q3" value="jupiter">
+                    <label for="travel">Seyahat</label><br>
+                    <input type="radio" id="cooking" name="q3" value="earth">
+                    <label for="cooking">Yemek Pişirme</label>
+                </div>
+            </div>
+            <div class="question" onclick="toggleOptions('options4')">
+                <p>4. Bir hayvan seçin:</p>
+                <div id="options4" class="options">
+                    <input type="radio" id="cat" name="q4" value="venus">
+                    <label for="cat">Kedi</label><br>
+                    <input type="radio" id="dog" name="q4" value="earth">
+                    <label for="dog">Köpek</label><br>
+                    <input type="radio" id="bird" name="q4" value="neptune">
+                    <label for="bird">Kuş</label><br>
+                    <input type="radio" id="fish" name="q4" value="pluto">
+                    <label for="fish">Balık</label>
+                </div>
+            </div>
+            <div class="question" onclick="toggleOptions('options5')">
+                <p>5. Bir yemek seçin:</p>
+                <div id="options5" class="options">
+                    <input type="radio" id="pizza" name="q5" value="jupiter">
+                    <label for="pizza">Pizza</label><br>
+                    <input type="radio" id="salad" name="q5" value="venus">
+                    <label for="salad">Salata</label><br>
+                    <input type="radio" id="steak" name="q5" value="mars">
+                    <label for="steak">Biftek</label><br>
+                    <input type="radio" id="pasta" name="q5" value="earth">
+                    <label for="pasta">Makarna</label>
+                </div>
+            </div>
+            <button type="button" onclick="calculatePlanet()">Hangi Gezegen Olduğumu Öğren</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="hangi-gezegensin.js"></script>
+</body>
+</html>
